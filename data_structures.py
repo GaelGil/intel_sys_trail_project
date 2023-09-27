@@ -47,68 +47,6 @@ class Node(object):
         return path
 
 
-class Stack(object):
-    """
-    Represent a stack with LIFO (last in first out) queuing
-    """
-
-    def __init__(self):
-        self.list = []
-
-    def push(self, item):
-        """
-        Push the given item on the stack
-        :param item: (of any type)
-        :return: None
-        """
-        self.list.append(item)
-
-    def pop(self):
-        """
-        Remove the most recently pushed item from the stack and return it.
-        :return: item (of any type)
-        """
-        return self.list.pop()
-
-    def is_empty(self):
-        """
-        Is this stack empty?
-        :return: (Boolean) True if the stack is empty, False otherwise
-        """
-        return not self.list
-
-
-class Queue:
-    """
-    Represent a queue with FIFO (first in first out) queuing
-    """
-
-    def __init__(self):
-        self.list = []
-
-    def push(self, item):
-        """
-        Add the given item to the end of the queue
-        :param item: (of any type)
-        :return: None
-        """
-        self.list.insert(0, item)
-
-    def pop(self):
-        """
-        Remove the earliest pushed item from the queue and return it.
-        :return: item (of any type)
-        """
-        return self.list.pop()
-
-    def is_empty(self):
-        """
-        Is this queue empty?
-        :return: (Boolean) True if the queue is empty, False otherwise
-        """
-        return not self.list
-
-
 class PriorityQueue(object):
     """
     Represent a priority queue container where each item has a priority
