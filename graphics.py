@@ -1,11 +1,3 @@
-# ----------------------------------------------------------------------
-# Name:     graphics
-# Purpose:  Visualization of the maze and solution
-#
-# Author:   Rula Khayrallah
-#
-# Copyright ©  Rula Khayrallah
-# ----------------------------------------------------------------------
 import tkinter
 
 
@@ -56,7 +48,7 @@ class Display(object):
                                              outline="")
 
         # load the .gif image file
-        sammy = tkinter.PhotoImage(file='sammy.gif')
+        sammy = tkinter.PhotoImage(file='ball.png')
 
         self.mascot = self.canvas.create_image((sammy_x + 0.5) * self.size,
                                                (sammy_y + 0.5) * self.size,
